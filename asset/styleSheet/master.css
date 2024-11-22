@@ -1,0 +1,205 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Frank Ruhl Libre", serif;
+    >header{
+        width: 90%;
+        height: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.067);
+        display: flex;
+        align-items: center;
+        >p{
+            width: 17%;
+            /* border: 2px solid red; */
+            &:first-child{
+                text-align: center;
+            }
+            &:nth-of-type(3){
+                width: 10%;
+            }
+            &:nth-of-type(7){
+                text-align: center;
+            }
+            >i{
+                font-size: 10px;
+            }
+        }
+    }
+    >main{
+        width: 90%;
+        >article{
+            width: 100%;
+            height: 70px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.067);
+            display: flex;
+            align-items: center;
+            >p{
+                width: 60px;
+                text-align: center;
+                margin-left: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                >i{
+                    font-size: 10px;
+                    margin-right: 10px;
+                    color: rgba(0, 0, 0, 0.362);
+                }
+            }
+            >figure{
+                width: 17%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 100px;
+                >img{
+                    width: 15%;
+                    height: 45%;
+                    object-fit: cover;
+                }
+                >figcaption{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    >p{
+                        font-size: 15px;
+                        width: 100px;
+                        margin-left: 10px;
+                    }
+                    >h3{
+                        color: rgba(0, 0, 0, 0.199);
+                    }
+                }
+            }
+            .price{
+                width: 12%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+            }
+            .pricechange{
+                width: 17%;
+                height: 100%;
+                 display: flex;
+                 align-items: center;
+                 font-size: 10px;
+            }
+            .price_change_percentage_24h{
+                width: 15%;
+                height: 100%;
+                 display: flex;
+                 align-items: center;
+                 font-size: 10px;
+            }
+            .last_updated{
+                width: 24%;
+                height: 100%;
+                 display: flex;
+                 font-size: 10px;
+                 align-items: center;
+            }
+        }
+    }
+    .me {
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        bottom: 40px;
+        right: 5px;
+        z-index: 1001;
+        /* border: 1px solid red; */
+    
+        >div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            &:first-of-type {
+                border-radius: 49% 51% 46% 54% / 74% 77% 23% 26%;
+                background-color: #65425f;
+                animation: anime2 infinite alternate 2s;
+    
+            }
+    
+            &:last-of-type {
+                background-image: url(../img/zahra.jpg);
+                background-size: cover;
+                border-radius: 49% 51% 46% 54% / 37% 31% 69% 63%;
+                animation: anime1 infinite alternate 2s;
+    
+            }
+        }
+    
+        &:hover {
+            >a {
+                left: -30px;
+                opacity: 1;
+    
+                &:nth-of-type(2) {
+                    left: -70px;
+                }
+    
+                &:nth-of-type(3) {
+                    left: -70px;
+                }
+    
+                &:nth-of-type(4) {
+                    left: -30px;
+                }
+            }
+        }
+    
+        >a {
+            position: absolute;
+            left: 30px;
+            text-decoration: none;
+            font-size: 30px;
+            transition: 1s;
+            color: rgb(0, 0, 0);
+            opacity: 0;
+    
+            &:first-of-type {
+                top: 0;
+    
+            }
+    
+            &:nth-of-type(2) {
+                top: 40px;
+            }
+    
+            &:nth-of-type(3) {
+                top: 90px;
+            }
+    
+            &:nth-of-type(4) {
+                top: 140px;
+            }
+    
+        }
+    
+    
+    }
+  
+}
+@keyframes anime1 {
+    to {
+        border-radius: 49% 51% 48% 52% / 46% 46% 54% 54%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        border-radius: 70% 30% 44% 56% / 46% 34% 66% 54%;
+    }
+}
+
